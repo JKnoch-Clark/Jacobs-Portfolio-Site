@@ -12,35 +12,35 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
         title: 'New York Times Api',
-        img: 'images/nyt_api.png',
+        img: '/Jacobs-Portfolio-Site/images/nyt_api.png',
         alt: 'New York Times Api Displaying News Articles',
         description: 'The New York Times API website provides access to a variety of news and article data.',
         link: '/nyt/nyt.html'
     },
     {
         title: 'Blog',
-        img: 'images/Blog.png',
+        img: '/Jacobs-Portfolio-Site/images/Blog.png',
         alt: 'Jacobs smorgasbord Blog front page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/blog/blog.php'
     },
     {
         title: 'Weather Api',
-        img: 'images/weather_api.png',
+        img: '/Jacobs-Portfolio-Site/images/weather_api.png',
         alt: 'Weather Api Displaying Weather Information',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/weather/weather.html'
     },
     {
         title: 'Gallery',
-        img: 'images/gallery.png',
+        img: '/Jacobs-Portfolio-Site/images/gallery.png',
         alt: 'Gallery of Pixel Art',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/gallery/gallery.php'
     },
     {
         title: 'Form Validation',
-        img: 'images/form_validate.png',
+        img: '/Jacobs-Portfolio-Site/images/form_validate.png',
         alt: 'Form Validation Page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/form_validate/project_2.html'
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
             portfolioItems += `
             <div class="card">
                 <div class="container">
-                    <h3><b><a href='${item.link}'>${item.title}</a></b></h3>
+                    <h3><b><a href='/Jacobs-Portfolio-Site/${item.link}'>${item.title}</a></b></h3>
                     <p>${item.description}</p>
                 </div>
-                <img src="${item.img}" alt="${item.alt}">
+                <img src="/Jacobs-Portfolio-Site/${item.img}" alt="${item.alt}">
             </div>
             `;
         });
