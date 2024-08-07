@@ -12,35 +12,35 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
         title: 'New York Times Api',
-        img: '/Jacobs-Portfolio-Site/images/nyt_api.png',
+        img: 'images/nyt_api.png',
         alt: 'New York Times Api Displaying News Articles',
         description: 'The New York Times API website provides access to a variety of news and article data.',
         link: '/nyt/nyt.html'
     },
     {
         title: 'Blog',
-        img: '/Jacobs-Portfolio-Site/images/Blog.png',
+        img: 'images/Blog.png',
         alt: 'Jacobs smorgasbord Blog front page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/blog/blog.php'
     },
     {
         title: 'Weather Api',
-        img: '/Jacobs-Portfolio-Site/images/weather_api.png',
+        img: 'images/weather_api.png',
         alt: 'Weather Api Displaying Weather Information',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/weather/weather.html'
     },
     {
         title: 'Gallery',
-        img: '/Jacobs-Portfolio-Site/images/gallery.png',
+        img: 'images/gallery.png',
         alt: 'Gallery of Pixel Art',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/gallery/gallery.php'
     },
     {
         title: 'Form Validation',
-        img: '/Jacobs-Portfolio-Site/images/form_validate.png',
+        img: 'images/form_validate.png',
         alt: 'Form Validation Page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/form_validate/project_2.html'
