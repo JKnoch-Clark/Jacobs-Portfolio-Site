@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
             portfolioItems += `
             <div class="card">
                 <div class="container">
-                    <h3><b><a href='${item.link}'>${item.title}</a></b></h3>
+                    <h3><b><a href='Jacobs-Portfolio-Site/${item.link}'>${item.title}</a></b></h3>
                     <p>${item.description}</p>
                 </div>
-                <img src="${item.img}" alt="${item.alt}">
+                <img src="Jacobs-Portfolio-Site/${item.img}" alt="${item.alt}">
             </div>
             `;
         });
