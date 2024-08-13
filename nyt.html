@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT API - CTEC 126</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nyt/css/nyt.css">
+    <script defer src="nyt/js/nyt.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="jacquard-12-regular">New York Times</h1>
+    </header>
+    <div class="section">
+        <label for="storyParameter">Please Select a Section</label>
+        <select name="storyParameter" id="storyParameter">
+            <option value="home">Home</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="dining">Dining</option>
+            <option value="fashion">Fashion</option>
+            <option value="health">Health Magazine</option>
+            <option value="opinion">National Opinion</option>
+            <option value="politics">Politics</option>
+            <option value="realEstate">Real Estate</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="world">World</option>
+        </select>
+        <button id="refresh">Refresh</button>
+    </div>
+    <main id="stories">
+
+    </main>
+    <footer>
+        <p id="footer"></p>
+    </footer>
+</body>
+
+</html>

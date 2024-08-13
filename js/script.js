@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         img: 'images/nyt_api.PNG',
         alt: 'New York Times Api Displaying News Articles',
         description: 'The New York Times API website provides access to a variety of news and article data.',
-        link: '/nyt/nyt.html'
+        link: 'nyt.html'
     },
     {
         title: 'Blog',
