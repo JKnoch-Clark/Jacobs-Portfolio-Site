@@ -4,46 +4,52 @@ document.addEventListener('DOMContentLoaded', function () {
     let footer = document.querySelector('footer');
 
     const portfolioArray = [{
-        title: '1709 Records',
+        title: '1709 Records (Divi Builder/Wordpress)',
         img: 'images/1709_records.png',
         alt: '1709 Records Homepage',
         description: 'Records Shop Website for 1709 Records.',
-        link: 'https://1709records.com/'
+        link: 'https://1709records.com/',
+        linkable: true
     },
     {
-        title: 'New York Times Api',
+        title: 'New York Times Api (Javascript)',
         img: 'images/nyt_api.PNG',
         alt: 'New York Times Api Displaying News Articles',
         description: 'The New York Times API website provides access to a variety of news and article data.',
-        link: 'nyt.html'
+        link: '/nyt/nyt.html',
+        linkable: false
     },
     {
-        title: 'Blog',
+        title: 'Blog (PHP)',
         img: 'images/Blog.PNG',
         alt: 'Jacobs smorgasbord Blog front page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
-        link: '/blog/blog.php'
+        link: '/blog/blog.php',
+        linkable: false
     },
     {
-        title: 'Weather Api',
+        title: 'Open Weather Api (Javascript)',
         img: 'images/weather_api.PNG',
         alt: 'Weather Api Displaying Weather Information',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
-        link: '/weather/weather.html'
+        link: '/weather/weather.html',
+        linkable: false
     },
     {
-        title: 'Gallery',
+        title: 'Gallery App (PHP)',
         img: 'images/Gallery.PNG',
         alt: 'Gallery of Pixel Art',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
-        link: '/gallery/gallery.php'
+        link: '/gallery/gallery.php',
+        linkable: false
     },
     {
-        title: 'Form Validation',
+        title: 'Form Validation (PHP)',
         img: 'images/form_validate.PNG',
         alt: 'Form Validation Page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
-        link: '/form_validate/project_2.html'
+        link: '/form_validate/project_2.html',
+        linkable: false
     }
     ];
 
@@ -55,15 +61,19 @@ document.addEventListener('DOMContentLoaded', function () {
         portfolioArray.forEach(function (item) {
             portfolioItems += `
             <div class="card">
-                <div class="container">
-                    <h3><b><a href='https://jknoch-clark.github.io/Jacobs-Portfolio-Site/${item.link}'>${item.title}</a></b></h3>
-                    <p>${item.description}</p>
+                <div class="container">`;
+            if (item.linkable) {
+                portfolioItems += `<h3><b><a href="${item.link}">${item.title}</a></b></h3>`;
+            } else {
+                portfolioItems += `<h3><b>${item.title}</b></h3>`;
+            }
+            portfolioItems += `
+                    <img src="https://jknoch-clark.github.io/Jacobs-Portfolio-Site/${item.img}" alt="${item.alt}">
                 </div>
-                <img src="https://jknoch-clark.github.io/Jacobs-Portfolio-Site/${item.img}" alt="${item.alt}">
             </div>
             `;
         });
-
+        // <p>${item.description}</p>
         portfolio.innerHTML = portfolioItems;
     }
 

@@ -4,8 +4,11 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
+  background: rgb(255, 244, 0);
+  background: radial-gradient(circle, rgba(255, 244, 0, 0.4485995082) 0%, rgba(255, 0, 31, 0.1936975474) 100%);
 }
 body p {
   font-size: 1.3rem;
@@ -77,26 +80,56 @@ body main .portfolio {
   margin: 0;
 }
 body main .portfolio .card {
-  max-width: 100%;
+  max-width: 75%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-basis: auto;
   padding: 1%;
-  text-align: center;
   background-color: #f9f9f9;
   transition: 0.3s;
   margin: 1%;
   border: 1px solid black;
   box-shadow: #111 -1px 1px 10px;
+  border-radius: 2%;
 }
 body main .portfolio .card img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  border-radius: 2%;
 }
 body main .portfolio .card .container {
-  width: 75%;
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
   align-items: center;
+}
+body main .portfolio .card .container a {
+  color: black;
+}
+body main .portfolio .card .container a:hover {
+  color: #ff0000;
+  transition: ease-in-out 0.5s;
+}
+body main .portfolio .card .container a:not(:hover) {
+  color: black;
+  transition: ease-in-out 1s;
 }
 body footer {
   text-align: center;
   border-top: 3px solid black;
+  background-color: white;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.1%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
