@@ -50,6 +50,14 @@ document.addEventListener('DOMContentLoaded', function () {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
         link: '/form_validate/project_2.html',
         linkable: false
+    },
+    {
+        title: 'Dashboard (React)',
+        img: 'images/Tutorial React App Credit Ed Roh.PNG',
+        alt: 'React Dashboard',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+        link: '',
+        linkable: false
     }
     ];
 
